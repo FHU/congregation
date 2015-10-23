@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		CFB1467A1BD6DD710059C299 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB146791BD6DD710059C299 /* AppDelegate.swift */; };
-		CFB1467C1BD6DD710059C299 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB1467B1BD6DD710059C299 /* ViewController.swift */; };
 		CFB1467F1BD6DD710059C299 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB1467D1BD6DD710059C299 /* Main.storyboard */; };
 		CFB146811BD6DD710059C299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB146801BD6DD710059C299 /* Assets.xcassets */; };
 		CFB146841BD6DD710059C299 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB146821BD6DD710059C299 /* LaunchScreen.storyboard */; };
+		CFC411C21BD9D4CD006C5531 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC411C11BD9D4CD006C5531 /* SearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CFF449B41BD9E2AF0022D5D8 /* AllChurchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF449B31BD9E2AF0022D5D8 /* AllChurchesViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CFF449B61BD9E6620022D5D8 /* Churches.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF449B51BD9E6620022D5D8 /* Churches.swift */; settings = {ASSET_TAGS = (); }; };
+		CFF449B81BD9E7CC0022D5D8 /* AllChurchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF449B71BD9E7CC0022D5D8 /* AllChurchesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CFB146761BD6DD710059C299 /* Congregation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Congregation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB146791BD6DD710059C299 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CFB1467B1BD6DD710059C299 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CFB1467E1BD6DD710059C299 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFB146801BD6DD710059C299 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFB146831BD6DD710059C299 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFB146851BD6DD710059C299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFC411C11BD9D4CD006C5531 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CFF449B31BD9E2AF0022D5D8 /* AllChurchesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllChurchesViewController.swift; sourceTree = "<group>"; };
+		CFF449B51BD9E6620022D5D8 /* Churches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Churches.swift; sourceTree = "<group>"; };
+		CFF449B71BD9E7CC0022D5D8 /* AllChurchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllChurchesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +60,13 @@
 		CFB146781BD6DD710059C299 /* Congregation */ = {
 			isa = PBXGroup;
 			children = (
-				CFB146791BD6DD710059C299 /* AppDelegate.swift */,
-				CFB1467B1BD6DD710059C299 /* ViewController.swift */,
+				CFF449B31BD9E2AF0022D5D8 /* AllChurchesViewController.swift */,
+				CFC411C11BD9D4CD006C5531 /* SearchViewController.swift */,
+				CFF449B71BD9E7CC0022D5D8 /* AllChurchesTableViewController.swift */,
 				CFB1467D1BD6DD710059C299 /* Main.storyboard */,
+				CFF449B51BD9E6620022D5D8 /* Churches.swift */,
 				CFB146801BD6DD710059C299 /* Assets.xcassets */,
+				CFB146791BD6DD710059C299 /* AppDelegate.swift */,
 				CFB146821BD6DD710059C299 /* LaunchScreen.storyboard */,
 				CFB146851BD6DD710059C299 /* Info.plist */,
 			);
@@ -134,7 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFB1467C1BD6DD710059C299 /* ViewController.swift in Sources */,
+				CFF449B81BD9E7CC0022D5D8 /* AllChurchesTableViewController.swift in Sources */,
+				CFF449B41BD9E2AF0022D5D8 /* AllChurchesViewController.swift in Sources */,
+				CFC411C21BD9D4CD006C5531 /* SearchViewController.swift in Sources */,
+				CFF449B61BD9E6620022D5D8 /* Churches.swift in Sources */,
 				CFB1467A1BD6DD710059C299 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +297,7 @@
 				CFB1468A1BD6DD710059C299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
