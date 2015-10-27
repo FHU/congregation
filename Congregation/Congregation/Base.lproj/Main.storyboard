@@ -5,10 +5,10 @@
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Name of Church-->
         <scene sceneID="sce-em-siQ">
             <objects>
-                <viewController storyboardIdentifier="ChurchProfile" id="id3-EU-b1M" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChurchProfile" id="id3-EU-b1M" customClass="ChurchViewController" customModule="Congregation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tox-7i-0gi"/>
                         <viewControllerLayoutGuide type="bottom" id="7Eu-3m-LSb"/>
@@ -33,19 +33,27 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="f85-0n-ASB"/>
                                 </items>
                             </toolbar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gi2-VZ-D9B">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gi2-VZ-D9B">
                                 <rect key="frame" x="0.0" y="108" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Xee-6J-hpY" firstAttribute="centerX" secondItem="ogp-rN-hsu" secondAttribute="centerX" id="Ewu-e3-qkl"/>
-                            <constraint firstItem="Xee-6J-hpY" firstAttribute="top" secondItem="Tox-7i-0gi" secondAttribute="bottom" constant="44" id="bZQ-dn-Cly"/>
-                            <constraint firstItem="Xee-6J-hpY" firstAttribute="width" secondItem="ogp-rN-hsu" secondAttribute="width" id="sNw-Ep-j3w"/>
+                            <constraint firstItem="Xee-6J-hpY" firstAttribute="width" secondItem="ogp-rN-hsu" secondAttribute="width" id="3Zs-6H-rI9"/>
+                            <constraint firstItem="gi2-VZ-D9B" firstAttribute="width" secondItem="ogp-rN-hsu" secondAttribute="width" id="Wt7-k6-iDY"/>
+                            <constraint firstItem="Xee-6J-hpY" firstAttribute="top" secondItem="Tox-7i-0gi" secondAttribute="bottom" id="XdR-uL-iGl"/>
+                            <constraint firstItem="gi2-VZ-D9B" firstAttribute="top" secondItem="Xee-6J-hpY" secondAttribute="bottom" id="Y4w-Yt-OiC"/>
+                            <constraint firstItem="gi2-VZ-D9B" firstAttribute="centerX" secondItem="ogp-rN-hsu" secondAttribute="centerX" id="d32-Kq-yda"/>
+                            <constraint firstItem="Xee-6J-hpY" firstAttribute="centerX" secondItem="ogp-rN-hsu" secondAttribute="centerX" id="j0P-rR-jm2"/>
+                            <constraint firstItem="7Eu-3m-LSb" firstAttribute="top" secondItem="gi2-VZ-D9B" secondAttribute="bottom" id="w6g-EC-9r8"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Name of Church" id="ARj-GK-YrY"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ChurchTitle" destination="ARj-GK-YrY" id="Qhb-4d-SUI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wVg-YS-FH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,6 +149,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="id3-EU-b1M" kind="show" id="xhL-cW-GKb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
