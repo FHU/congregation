@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF0FA7DE1BE00C8200250977 /* BLAHBLAHTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FA7DD1BE00C8200250977 /* BLAHBLAHTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CFB1467A1BD6DD710059C299 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB146791BD6DD710059C299 /* AppDelegate.swift */; };
 		CFB1467F1BD6DD710059C299 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB1467D1BD6DD710059C299 /* Main.storyboard */; };
 		CFB146811BD6DD710059C299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB146801BD6DD710059C299 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF0FA7DD1BE00C8200250977 /* BLAHBLAHTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLAHBLAHTableViewController.swift; sourceTree = "<group>"; };
 		CFB146761BD6DD710059C299 /* Congregation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Congregation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB146791BD6DD710059C299 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFB1467E1BD6DD710059C299 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				CFF449B31BD9E2AF0022D5D8 /* AllChurchesViewController.swift */,
+				CF0FA7DD1BE00C8200250977 /* BLAHBLAHTableViewController.swift */,
 				CFC411C11BD9D4CD006C5531 /* SearchViewController.swift */,
 				CFF449B71BD9E7CC0022D5D8 /* AllChurchesTableViewController.swift */,
 				CFB1467D1BD6DD710059C299 /* Main.storyboard */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFF449B81BD9E7CC0022D5D8 /* AllChurchesTableViewController.swift in Sources */,
+				CF0FA7DE1BE00C8200250977 /* BLAHBLAHTableViewController.swift in Sources */,
 				CFF449B41BD9E2AF0022D5D8 /* AllChurchesViewController.swift in Sources */,
 				CFC411C21BD9D4CD006C5531 /* SearchViewController.swift in Sources */,
 				CFF449B61BD9E6620022D5D8 /* Churches.swift in Sources */,
