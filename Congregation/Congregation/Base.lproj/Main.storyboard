@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yyN-2g-ycJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yyN-2g-ycJ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
@@ -21,21 +23,241 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="V3a-A2-PmT"/>
-                                    <barButtonItem title="Pin" id="XTR-SM-ccv"/>
+                                    <barButtonItem image="1448017221_gps_location_map_marker" id="XTR-SM-ccv"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="MnD-0f-hfI"/>
-                                    <barButtonItem title="Clock" id="hTc-zE-bKe"/>
+                                    <barButtonItem image="1448017239_alarm_alert_clock_event_history_schedule_time_watch" id="hTc-zE-bKe"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Ncd-S9-ANB"/>
-                                    <barButtonItem title="Guy" id="rnX-f6-MR5"/>
+                                    <barButtonItem image="1448017251_account_friend_human_man_member_person_profile_user_users" id="rnX-f6-MR5"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="j86-oz-DgY"/>
-                                    <barButtonItem title="Calender" id="eJy-yM-pGo"/>
+                                    <barButtonItem id="eJy-yM-pGo">
+                                        <string key="image">1448017276_award_awards_badge_best_big_game_bronze_ceremony_certificate_champion_choice_competitive_conqueror_cup_emblem_favorite</string>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Qvp-Qb-qRe"/>
-                                    <barButtonItem title="Mic" id="Z5e-Le-3BE"/>
+                                    <barButtonItem image="1448017264_cascade_display_layout_stack_sw_view" id="Z5e-Le-3BE"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="f85-0n-ASB"/>
                                 </items>
                             </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gi2-VZ-D9B">
                                 <rect key="frame" x="0.0" y="108" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Info Cell" rowHeight="128" id="adC-UK-h7n" customClass="ChurchInfoTableViewCell" customModule="Congregation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="128"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="adC-UK-h7n" id="5tV-lA-0cj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="127.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" text="Church Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0g-Ce-7LQ">
+                                                    <rect key="frame" x="8" y="8" width="93.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQg-SP-8bH">
+                                                    <rect key="frame" x="100" y="36" width="53" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(721)-555-5555" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Zj-pU-Vpt">
+                                                    <rect key="frame" x="100" y="53" width="105" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.internet.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBy-HE-gMh">
+                                                    <rect key="frame" x="100" y="70" width="117" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rXl-w7-AqX">
+                                                    <rect key="frame" x="12" y="36" width="84" height="84.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="84" id="HOp-fR-cuf"/>
+                                                        <constraint firstAttribute="width" secondItem="rXl-w7-AqX" secondAttribute="height" multiplier="1:1" id="p65-Xc-Ab4"/>
+                                                    </constraints>
+                                                </mapView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="MBy-HE-gMh" secondAttribute="bottom" constant="32.5" id="5r4-YG-K2C"/>
+                                                <constraint firstItem="RQg-SP-8bH" firstAttribute="top" secondItem="5tV-lA-0cj" secondAttribute="topMargin" constant="28" id="7hf-Xm-TZk"/>
+                                                <constraint firstItem="5Zj-pU-Vpt" firstAttribute="top" secondItem="RQg-SP-8bH" secondAttribute="bottom" id="Dnt-eR-KKH"/>
+                                                <constraint firstItem="MBy-HE-gMh" firstAttribute="top" secondItem="5Zj-pU-Vpt" secondAttribute="bottom" id="I6O-1r-ygw"/>
+                                                <constraint firstItem="5Zj-pU-Vpt" firstAttribute="leading" secondItem="rXl-w7-AqX" secondAttribute="trailing" constant="4" id="SRZ-sI-4bN"/>
+                                                <constraint firstAttribute="topMargin" secondItem="n0g-Ce-7LQ" secondAttribute="top" id="TjD-Gk-BkQ"/>
+                                                <constraint firstItem="rXl-w7-AqX" firstAttribute="leading" secondItem="5tV-lA-0cj" secondAttribute="leadingMargin" constant="4" id="ZcL-CN-43o"/>
+                                                <constraint firstItem="rXl-w7-AqX" firstAttribute="top" secondItem="n0g-Ce-7LQ" secondAttribute="bottom" constant="7.5" id="bmG-Ut-xJb"/>
+                                                <constraint firstItem="MBy-HE-gMh" firstAttribute="leading" secondItem="rXl-w7-AqX" secondAttribute="trailing" constant="4" id="rrp-dD-j1m"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="n0g-Ce-7LQ" secondAttribute="leading" id="s6a-N9-2eo"/>
+                                                <constraint firstItem="RQg-SP-8bH" firstAttribute="leading" secondItem="rXl-w7-AqX" secondAttribute="trailing" constant="4" id="uIw-GY-Vts"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="address" destination="RQg-SP-8bH" id="fc9-fx-6c3"/>
+                                            <outlet property="churchTitle" destination="n0g-Ce-7LQ" id="5mo-M7-EIs"/>
+                                            <outlet property="phone" destination="5Zj-pU-Vpt" id="8lo-GG-ReT"/>
+                                            <outlet property="web" destination="MBy-HE-gMh" id="9Ce-SF-zd7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Time Cell" rowHeight="62" id="L1V-9R-Q1H" customClass="ChurchTimesTableViewCell" customModule="Congregation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="156" width="375" height="62"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L1V-9R-Q1H" id="MVS-qT-HID">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1448017239_alarm_alert_clock_event_history_schedule_time_watch" translatesAutoresizingMaskIntoConstraints="NO" id="zqF-vq-NSq">
+                                                    <rect key="frame" x="28" y="8" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="32" id="TTY-Iu-1Lh"/>
+                                                        <constraint firstAttribute="height" constant="32" id="cZp-BY-c0a"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Times" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOc-Bb-hx4">
+                                                    <rect key="frame" x="68" y="13" width="46" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meeting Times:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afn-JA-FCR">
+                                                    <rect key="frame" x="79" y="38" width="93.5" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Afn-JA-FCR" firstAttribute="top" secondItem="OOc-Bb-hx4" secondAttribute="bottom" constant="8" id="0qh-JQ-tth"/>
+                                                <constraint firstItem="OOc-Bb-hx4" firstAttribute="top" secondItem="MVS-qT-HID" secondAttribute="topMargin" constant="5" id="6v8-NZ-FhW"/>
+                                                <constraint firstItem="Afn-JA-FCR" firstAttribute="leading" secondItem="MVS-qT-HID" secondAttribute="leadingMargin" constant="71" id="7pL-Zz-9Lk"/>
+                                                <constraint firstItem="OOc-Bb-hx4" firstAttribute="leading" secondItem="zqF-vq-NSq" secondAttribute="trailing" constant="8" id="BZX-7T-Yaa"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Afn-JA-FCR" secondAttribute="bottom" constant="-0.5" id="IaP-96-AM8"/>
+                                                <constraint firstAttribute="topMargin" secondItem="zqF-vq-NSq" secondAttribute="top" id="RBe-a0-Hfr"/>
+                                                <constraint firstItem="zqF-vq-NSq" firstAttribute="leading" secondItem="MVS-qT-HID" secondAttribute="leadingMargin" constant="20" id="Rgn-fd-hVy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="meetingTimes" destination="Afn-JA-FCR" id="ca3-E8-Dmg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="People Cell" rowHeight="66" id="Odd-j9-iEA" customClass="ChurchPeopleTableViewCell" customModule="Congregation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="218" width="375" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Odd-j9-iEA" id="hSL-jI-JI0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1448017251_account_friend_human_man_member_person_profile_user_users" translatesAutoresizingMaskIntoConstraints="NO" id="mkm-1p-CLT">
+                                                    <rect key="frame" x="28" y="8" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="32" id="3dg-Mw-Tqm"/>
+                                                        <constraint firstAttribute="height" constant="32" id="y2v-Vu-e5a"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS7-zF-hy3">
+                                                    <rect key="frame" x="68" y="13" width="52.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Last: Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQP-ia-u4q">
+                                                    <rect key="frame" x="80" y="41.5" width="90" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dS7-zF-hy3" firstAttribute="top" secondItem="hSL-jI-JI0" secondAttribute="topMargin" constant="5" id="B2h-hT-LUJ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="FQP-ia-u4q" secondAttribute="bottom" id="WF6-PU-t0L"/>
+                                                <constraint firstItem="FQP-ia-u4q" firstAttribute="leading" secondItem="hSL-jI-JI0" secondAttribute="leadingMargin" constant="72" id="WGz-L3-sbC"/>
+                                                <constraint firstItem="FQP-ia-u4q" firstAttribute="top" secondItem="dS7-zF-hy3" secondAttribute="bottom" constant="8" id="hHa-qH-6Ri"/>
+                                                <constraint firstItem="mkm-1p-CLT" firstAttribute="leading" secondItem="hSL-jI-JI0" secondAttribute="leadingMargin" constant="20" id="mXv-Ya-4M8"/>
+                                                <constraint firstAttribute="topMargin" secondItem="mkm-1p-CLT" secondAttribute="top" id="nGC-R2-UEO"/>
+                                                <constraint firstItem="dS7-zF-hy3" firstAttribute="leading" secondItem="mkm-1p-CLT" secondAttribute="trailing" constant="8" id="oth-c8-GVo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="people" destination="FQP-ia-u4q" id="JkQ-f7-SuS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Event Cell" rowHeight="61" id="gdl-K2-UUD" customClass="ChurchEventsTableViewCell" customModule="Congregation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="284" width="375" height="61"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gdl-K2-UUD" id="qE9-db-gfi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IXK-Cu-Sw1">
+                                                    <rect key="frame" x="30" y="15" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="VUm-Uu-lUr"/>
+                                                        <constraint firstAttribute="width" constant="32" id="axl-6B-vBL"/>
+                                                    </constraints>
+                                                    <string key="image">1448017276_award_awards_badge_best_big_game_bronze_ceremony_certificate_champion_choice_competitive_conqueror_cup_emblem_favorite</string>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msc-TI-suj">
+                                                    <rect key="frame" x="70" y="20" width="52" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IXK-Cu-Sw1" firstAttribute="top" secondItem="qE9-db-gfi" secondAttribute="topMargin" constant="7" id="8KA-kS-qKC"/>
+                                                <constraint firstItem="msc-TI-suj" firstAttribute="leading" secondItem="IXK-Cu-Sw1" secondAttribute="trailing" constant="8" id="CK5-Ab-qRt"/>
+                                                <constraint firstItem="msc-TI-suj" firstAttribute="top" secondItem="qE9-db-gfi" secondAttribute="topMargin" constant="12" id="WvT-oz-b2C"/>
+                                                <constraint firstItem="IXK-Cu-Sw1" firstAttribute="leading" secondItem="qE9-db-gfi" secondAttribute="leadingMargin" constant="22" id="bR4-mD-2d1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Topic Cell" rowHeight="67" id="2u8-rC-m0r" customClass="ChurchTopicsTableViewCell" customModule="Congregation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="345" width="375" height="67"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2u8-rC-m0r" id="j87-LY-ZMl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="66.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1448017264_cascade_display_layout_stack_sw_view" translatesAutoresizingMaskIntoConstraints="NO" id="rdc-of-DRJ">
+                                                    <rect key="frame" x="31" y="8" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="32" id="mQK-Tm-0Mq"/>
+                                                        <constraint firstAttribute="height" constant="32" id="ufr-qx-5gz"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiZ-ID-yz5">
+                                                    <rect key="frame" x="71" y="13" width="51" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Service Topic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgm-vx-wtf">
+                                                    <rect key="frame" x="83" y="42" width="114" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="topMargin" secondItem="rdc-of-DRJ" secondAttribute="top" id="20I-IY-3X3"/>
+                                                <constraint firstItem="rdc-of-DRJ" firstAttribute="leading" secondItem="j87-LY-ZMl" secondAttribute="leadingMargin" constant="23" id="B4z-nm-irp"/>
+                                                <constraint firstItem="bgm-vx-wtf" firstAttribute="leading" secondItem="j87-LY-ZMl" secondAttribute="leadingMargin" constant="75" id="OQR-my-bxQ"/>
+                                                <constraint firstItem="xiZ-ID-yz5" firstAttribute="leading" secondItem="rdc-of-DRJ" secondAttribute="trailing" constant="8" id="dbf-eX-OhM"/>
+                                                <constraint firstItem="xiZ-ID-yz5" firstAttribute="top" secondItem="j87-LY-ZMl" secondAttribute="topMargin" constant="5" id="hRx-VM-Oy7"/>
+                                                <constraint firstItem="bgm-vx-wtf" firstAttribute="top" secondItem="xiZ-ID-yz5" secondAttribute="bottom" constant="8" id="hbj-I3-z54"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="Topics" destination="bgm-vx-wtf" id="bUG-mc-k3D"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="id3-EU-b1M" id="U1I-bq-Z8r"/>
+                                    <outlet property="delegate" destination="id3-EU-b1M" id="32y-lR-4Tw"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -52,12 +274,12 @@
                     <navigationItem key="navigationItem" title="Name of Church" id="ARj-GK-YrY"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="ChurchTitle" destination="ARj-GK-YrY" id="Qhb-4d-SUI"/>
+                        <outlet property="TableView" destination="gi2-VZ-D9B" id="qDN-MV-cCb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wVg-YS-FH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7234.5" y="-32.5"/>
+            <point key="canvasLocation" x="1858.5" y="-4528.5"/>
         </scene>
         <!--Double Springs Church of Christ of Later Day Saints-->
         <scene sceneID="URB-qu-tGX">
@@ -98,7 +320,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7OD-gE-aaO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6744.5" y="784.5"/>
+            <point key="canvasLocation" x="1368.5" y="-3711.5"/>
         </scene>
         <!--All Churches-->
         <scene sceneID="IpU-is-LLg">
@@ -129,28 +351,66 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="noK-p5-49p"/>
                                 </items>
                             </toolbar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xh1-hV-Oi9">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="83" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xh1-hV-Oi9">
                                 <rect key="frame" x="0.0" y="108" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="UZv-ql-rrb" style="IBUITableViewCellStyleDefault" id="4TY-wq-N9x">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="All Churches Cell" rowHeight="61" id="4TY-wq-N9x" customClass="AllChurchesTableViewCell" customModule="Congregation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="61"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4TY-wq-N9x" id="1Q3-hL-uoj">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UZv-ql-rrb">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Church Times" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GR-r1-BCA">
+                                                    <rect key="frame" x="31" y="35" width="84" height="17"/>
+                                                    <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wiu-V9-xUX">
+                                                    <rect key="frame" x="305" y="11.5" width="38" height="38"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="38" id="7bF-kV-RMY"/>
+                                                        <constraint firstAttribute="width" secondItem="Wiu-V9-xUX" secondAttribute="height" multiplier="1:1" id="ZJH-tK-HT6"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Pin" image="1448017221_gps_location_map_marker">
+                                                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Church Title★" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnh-fl-B9s">
+                                                    <rect key="frame" x="8" y="13" width="280" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="280" id="Mx0-D4-Smr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.21469113124765274" green="0.56373011387962579" blue="0.95003449920000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.1 m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0X-Zr-yuK">
+                                                    <rect key="frame" x="311" y="49" width="27.5" height="11"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6GR-r1-BCA" firstAttribute="top" secondItem="gnh-fl-B9s" secondAttribute="bottom" constant="1.5" id="2Vz-RR-uCr"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="P0X-Zr-yuK" secondAttribute="trailing" constant="28.5" id="DQ1-uf-2eM"/>
+                                                <constraint firstItem="P0X-Zr-yuK" firstAttribute="top" secondItem="Wiu-V9-xUX" secondAttribute="bottom" constant="-0.5" id="Lcr-Wa-Str"/>
+                                                <constraint firstItem="gnh-fl-B9s" firstAttribute="top" secondItem="1Q3-hL-uoj" secondAttribute="topMargin" constant="5" id="MxH-Fy-eFU"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="gnh-fl-B9s" secondAttribute="leading" id="Zgx-21-au2"/>
+                                                <constraint firstItem="6GR-r1-BCA" firstAttribute="leading" secondItem="1Q3-hL-uoj" secondAttribute="leadingMargin" constant="23" id="e38-7V-89H"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="6GR-r1-BCA" secondAttribute="bottom" id="h2v-ii-0uq"/>
+                                                <constraint firstItem="Wiu-V9-xUX" firstAttribute="centerY" secondItem="1Q3-hL-uoj" secondAttribute="centerY" id="iod-I1-h0t"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Wiu-V9-xUX" secondAttribute="trailing" constant="24" id="mYv-pM-0Kw"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="id3-EU-b1M" kind="show" id="xhL-cW-GKb"/>
+                                            <outlet property="churchTimes" destination="6GR-r1-BCA" id="9mD-ED-mWK"/>
+                                            <outlet property="churchTitle" destination="gnh-fl-B9s" id="KUN-cG-ajM"/>
+                                            <outlet property="distance" destination="P0X-Zr-yuK" id="bkS-d8-VXN"/>
+                                            <segue destination="id3-EU-b1M" kind="show" identifier="SwitchToChurchView" id="xhL-cW-GKb"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -174,7 +434,7 @@
                     <navigationItem key="navigationItem" title="All Churches" id="SXy-Ie-fEX">
                         <barButtonItem key="backBarButtonItem" title="Back" id="xFJ-hR-eJ1"/>
                         <rightBarButtonItems>
-                            <barButtonItem title="Search" id="Uh3-zW-Hgz">
+                            <barButtonItem image="1448017246_find_in_magnifier_magnifying_research_search_view_zoom" id="Uh3-zW-Hgz">
                                 <connections>
                                     <segue destination="BD2-rJ-e0I" kind="show" id="8s2-XB-arG"/>
                                 </connections>
@@ -183,10 +443,13 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="xh1-hV-Oi9" id="kud-JV-ZQY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lIB-MN-QFJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6744.5" y="-32.5"/>
+            <point key="canvasLocation" x="1368.5" y="-4528.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="12F-6i-qwO">
@@ -205,7 +468,17 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tsH-Qc-X2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6249.5" y="-32.5"/>
+            <point key="canvasLocation" x="873.5" y="-4528.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1448017221_gps_location_map_marker" width="42" height="42"/>
+        <image name="1448017239_alarm_alert_clock_event_history_schedule_time_watch" width="42" height="42"/>
+        <image name="1448017246_find_in_magnifier_magnifying_research_search_view_zoom" width="42" height="42"/>
+        <image name="1448017251_account_friend_human_man_member_person_profile_user_users" width="42" height="42"/>
+        <image name="1448017264_cascade_display_layout_stack_sw_view" width="42" height="42"/>
+        <image width="42" height="42">
+            <string key="name">1448017276_award_awards_badge_best_big_game_bronze_ceremony_certificate_champion_choice_competitive_conqueror_cup_emblem_favorite</string>
+        </image>
+    </resources>
 </document>

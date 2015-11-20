@@ -10,14 +10,18 @@ import UIKit
 
 class AllChurchesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var churches = [Church]()
+    var churches = Dataset.Data
     
     
+    @IBOutlet weak var tableView: UITableView!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.churches = [Church(name: "Double Springs Church of Christ"), Church(name: "Henderson Church of Christ"), Church(name: "Pinson Church of Christ"), Church(name: "Estes Church of Christ"), Church(name: "Cool Hand Luke Church of Christ")]
+        tableView.estimatedRowHeight = tableView.rowHeight
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
         override func didReceiveMemoryWarning() {
@@ -37,15 +41,45 @@ class AllChurchesViewController: UIViewController, UITableViewDelegate, UITableV
     
       func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->       UITableViewCell{
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
+        let allChurchesCell = tableView.dequeueReusableCellWithIdentifier("All Churches Cell", forIndexPath: indexPath) as! AllChurchesTableViewCell
         
         var church : Church
         
         church = churches[indexPath.row]
         
-        cell.textLabel?.text = church.name
+        allChurchesCell.churchTitle.text = church.name
         
-        return cell
+        allChurchesCell.churchTimes.text = ""
+        
+        for item in churches[indexPath.row].meetingTimes!{
+            
+            allChurchesCell.churchTimes.text?.appendContentsOf("\(item.meeting): \(item.time)\n")
+        }
+        
+        return allChurchesCell
+    }
+    
+
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+            if let identifier = segue.identifier{
+            
+            switch identifier {
+                
+            case "SwitchToChurchView":
+                let cell = sender as! AllChurchesTableViewCell
+                if let indexPath = tableView.indexPathForCell(cell){
+                    
+                    let receivingVC = segue.destinationViewController as! ChurchViewController
+                    receivingVC.receivedChurch = churches[indexPath.row]
+                }
+            default:
+                break
+            }
+        }
+        
+        
     }
         
         

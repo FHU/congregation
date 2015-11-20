@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		CF0FA7E01BE018DF00250977 /* ChurchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FA7DF1BE018DF00250977 /* ChurchViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CF2D79071BF29B2600DAF0A7 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = CF2D79061BF29B2600DAF0A7 /* pin.png */; settings = {ASSET_TAGS = (); }; };
+		CF2D79091BF53EF200DAF0A7 /* ChurchInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D79081BF53EF200DAF0A7 /* ChurchInfoTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		CF2D790B1BF53F0A00DAF0A7 /* ChurchEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D790A1BF53F0A00DAF0A7 /* ChurchEventsTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		CF2D790D1BF53F2A00DAF0A7 /* ChurchPeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D790C1BF53F2A00DAF0A7 /* ChurchPeopleTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		CF2D79121BF5403700DAF0A7 /* ChurchTimesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D79111BF5403700DAF0A7 /* ChurchTimesTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		CF2D79141BF5405400DAF0A7 /* ChurchTopicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D79131BF5405400DAF0A7 /* ChurchTopicsTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		CF37BFC81BFE80A000B70933 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF37BFC71BFE80A000B70933 /* MapKit.framework */; };
+		CF6B730F1BFEE0FF00B1410B /* 1448017221_gps_location_map_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6B73091BFEE0FF00B1410B /* 1448017221_gps_location_map_marker.png */; settings = {ASSET_TAGS = (); }; };
+		CF6B73101BFEE0FF00B1410B /* 1448017239_alarm_alert_clock_event_history_schedule_time_watch.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6B730A1BFEE0FF00B1410B /* 1448017239_alarm_alert_clock_event_history_schedule_time_watch.png */; settings = {ASSET_TAGS = (); }; };
+		CF6B73111BFEE0FF00B1410B /* 1448017246_find_in_magnifier_magnifying_research_search_view_zoom.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6B730B1BFEE0FF00B1410B /* 1448017246_find_in_magnifier_magnifying_research_search_view_zoom.png */; settings = {ASSET_TAGS = (); }; };
+		CF6B73121BFEE0FF00B1410B /* 1448017251_account_friend_human_man_member_person_profile_user_users.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6B730C1BFEE0FF00B1410B /* 1448017251_account_friend_human_man_member_person_profile_user_users.png */; settings = {ASSET_TAGS = (); }; };
+		CF6B73131BFEE0FF00B1410B /* 1448017264_cascade_display_layout_stack_sw_view.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6B730D1BFEE0FF00B1410B /* 1448017264_cascade_display_layout_stack_sw_view.png */; settings = {ASSET_TAGS = (); }; };
+		CF6B73141BFEE0FF00B1410B /* 1448017276_award_awards_badge_best_big_game_bronze_ceremony_certificate_champion_choice_competitive_conqueror_cup_emblem_favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6B730E1BFEE0FF00B1410B /* 1448017276_award_awards_badge_best_big_game_bronze_ceremony_certificate_champion_choice_competitive_conqueror_cup_emblem_favorite.png */; settings = {ASSET_TAGS = (); }; };
+		CF83B9371BEBFF080003FD31 /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF83B9361BEBFF080003FD31 /* DataSet.swift */; settings = {ASSET_TAGS = (); }; };
+		CF83B9391BEC02250003FD31 /* AllChurchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF83B9381BEC02250003FD31 /* AllChurchesTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		CFB1467A1BD6DD710059C299 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB146791BD6DD710059C299 /* AppDelegate.swift */; };
 		CFB1467F1BD6DD710059C299 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB1467D1BD6DD710059C299 /* Main.storyboard */; };
 		CFB146811BD6DD710059C299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB146801BD6DD710059C299 /* Assets.xcassets */; };
@@ -15,11 +30,25 @@
 		CFC411C21BD9D4CD006C5531 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC411C11BD9D4CD006C5531 /* SearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CFF449B41BD9E2AF0022D5D8 /* AllChurchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF449B31BD9E2AF0022D5D8 /* AllChurchesViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CFF449B61BD9E6620022D5D8 /* Churches.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF449B51BD9E6620022D5D8 /* Churches.swift */; settings = {ASSET_TAGS = (); }; };
-		CFF449B81BD9E7CC0022D5D8 /* AllChurchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF449B71BD9E7CC0022D5D8 /* AllChurchesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CF0FA7DF1BE018DF00250977 /* ChurchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchViewController.swift; sourceTree = "<group>"; };
+		CF2D79061BF29B2600DAF0A7 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pin.png; path = Assets.xcassets/pin.png; sourceTree = "<group>"; };
+		CF2D79081BF53EF200DAF0A7 /* ChurchInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchInfoTableViewCell.swift; sourceTree = "<group>"; };
+		CF2D790A1BF53F0A00DAF0A7 /* ChurchEventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchEventsTableViewCell.swift; sourceTree = "<group>"; };
+		CF2D790C1BF53F2A00DAF0A7 /* ChurchPeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchPeopleTableViewCell.swift; sourceTree = "<group>"; };
+		CF2D79111BF5403700DAF0A7 /* ChurchTimesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchTimesTableViewCell.swift; sourceTree = "<group>"; };
+		CF2D79131BF5405400DAF0A7 /* ChurchTopicsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchTopicsTableViewCell.swift; sourceTree = "<group>"; };
+		CF37BFC71BFE80A000B70933 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CF6B73091BFEE0FF00B1410B /* 1448017221_gps_location_map_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1448017221_gps_location_map_marker.png; path = Assets.xcassets/1448017221_gps_location_map_marker.png; sourceTree = "<group>"; };
+		CF6B730A1BFEE0FF00B1410B /* 1448017239_alarm_alert_clock_event_history_schedule_time_watch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1448017239_alarm_alert_clock_event_history_schedule_time_watch.png; path = Assets.xcassets/1448017239_alarm_alert_clock_event_history_schedule_time_watch.png; sourceTree = "<group>"; };
+		CF6B730B1BFEE0FF00B1410B /* 1448017246_find_in_magnifier_magnifying_research_search_view_zoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1448017246_find_in_magnifier_magnifying_research_search_view_zoom.png; path = Assets.xcassets/1448017246_find_in_magnifier_magnifying_research_search_view_zoom.png; sourceTree = "<group>"; };
+		CF6B730C1BFEE0FF00B1410B /* 1448017251_account_friend_human_man_member_person_profile_user_users.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1448017251_account_friend_human_man_member_person_profile_user_users.png; path = Assets.xcassets/1448017251_account_friend_human_man_member_person_profile_user_users.png; sourceTree = "<group>"; };
+		CF6B730D1BFEE0FF00B1410B /* 1448017264_cascade_display_layout_stack_sw_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1448017264_cascade_display_layout_stack_sw_view.png; path = Assets.xcassets/1448017264_cascade_display_layout_stack_sw_view.png; sourceTree = "<group>"; };
+		CF6B730E1BFEE0FF00B1410B /* 1448017276_award_awards_badge_best_big_game_bronze_ceremony_certificate_champion_choice_competitive_conqueror_cup_emblem_favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1448017276_award_awards_badge_best_big_game_bronze_ceremony_certificate_champion_choice_competitive_conqueror_cup_emblem_favorite.png; path = Assets.xcassets/1448017276_award_awards_badge_best_big_game_bronze_ceremony_certificate_champion_choice_competitive_conqueror_cup_emblem_favorite.png; sourceTree = "<group>"; };
+		CF83B9361BEBFF080003FD31 /* DataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
+		CF83B9381BEC02250003FD31 /* AllChurchesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllChurchesTableViewCell.swift; sourceTree = "<group>"; };
 		CFB146761BD6DD710059C299 /* Congregation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Congregation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB146791BD6DD710059C299 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFB1467E1BD6DD710059C299 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,7 +58,6 @@
 		CFC411C11BD9D4CD006C5531 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CFF449B31BD9E2AF0022D5D8 /* AllChurchesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllChurchesViewController.swift; sourceTree = "<group>"; };
 		CFF449B51BD9E6620022D5D8 /* Churches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Churches.swift; sourceTree = "<group>"; };
-		CFF449B71BD9E7CC0022D5D8 /* AllChurchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllChurchesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,15 +65,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF37BFC81BFE80A000B70933 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF2D790E1BF53F9A00DAF0A7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CF83B9381BEC02250003FD31 /* AllChurchesTableViewCell.swift */,
+				CF2D790C1BF53F2A00DAF0A7 /* ChurchPeopleTableViewCell.swift */,
+				CF2D79081BF53EF200DAF0A7 /* ChurchInfoTableViewCell.swift */,
+				CF2D790A1BF53F0A00DAF0A7 /* ChurchEventsTableViewCell.swift */,
+				CF2D79111BF5403700DAF0A7 /* ChurchTimesTableViewCell.swift */,
+				CF2D79131BF5405400DAF0A7 /* ChurchTopicsTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		CF2D790F1BF53FB700DAF0A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF6B73091BFEE0FF00B1410B /* 1448017221_gps_location_map_marker.png */,
+				CF6B730E1BFEE0FF00B1410B /* 1448017276_award_awards_badge_best_big_game_bronze_ceremony_certificate_champion_choice_competitive_conqueror_cup_emblem_favorite.png */,
+				CF6B730D1BFEE0FF00B1410B /* 1448017264_cascade_display_layout_stack_sw_view.png */,
+				CF6B730A1BFEE0FF00B1410B /* 1448017239_alarm_alert_clock_event_history_schedule_time_watch.png */,
+				CF6B730C1BFEE0FF00B1410B /* 1448017251_account_friend_human_man_member_person_profile_user_users.png */,
+				CF6B730B1BFEE0FF00B1410B /* 1448017246_find_in_magnifier_magnifying_research_search_view_zoom.png */,
+				CFF449B51BD9E6620022D5D8 /* Churches.swift */,
+				CF83B9361BEBFF080003FD31 /* DataSet.swift */,
+				CF2D79061BF29B2600DAF0A7 /* pin.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CF2D79101BF53FD600DAF0A7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFF449B31BD9E2AF0022D5D8 /* AllChurchesViewController.swift */,
+				CF0FA7DF1BE018DF00250977 /* ChurchViewController.swift */,
+				CFC411C11BD9D4CD006C5531 /* SearchViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		CFB1466D1BD6DD710059C299 = {
 			isa = PBXGroup;
 			children = (
+				CF37BFC71BFE80A000B70933 /* MapKit.framework */,
 				CFB146781BD6DD710059C299 /* Congregation */,
 				CFB146771BD6DD710059C299 /* Products */,
 			);
@@ -62,12 +131,10 @@
 		CFB146781BD6DD710059C299 /* Congregation */ = {
 			isa = PBXGroup;
 			children = (
-				CFF449B31BD9E2AF0022D5D8 /* AllChurchesViewController.swift */,
-				CF0FA7DF1BE018DF00250977 /* ChurchViewController.swift */,
-				CFC411C11BD9D4CD006C5531 /* SearchViewController.swift */,
-				CFF449B71BD9E7CC0022D5D8 /* AllChurchesTableViewController.swift */,
 				CFB1467D1BD6DD710059C299 /* Main.storyboard */,
-				CFF449B51BD9E6620022D5D8 /* Churches.swift */,
+				CF2D79101BF53FD600DAF0A7 /* Controllers */,
+				CF2D790E1BF53F9A00DAF0A7 /* Cells */,
+				CF2D790F1BF53FB700DAF0A7 /* Resources */,
 				CFB146801BD6DD710059C299 /* Assets.xcassets */,
 				CFB146791BD6DD710059C299 /* AppDelegate.swift */,
 				CFB146821BD6DD710059C299 /* LaunchScreen.storyboard */,
@@ -133,9 +200,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6B73101BFEE0FF00B1410B /* 1448017239_alarm_alert_clock_event_history_schedule_time_watch.png in Resources */,
+				CF6B730F1BFEE0FF00B1410B /* 1448017221_gps_location_map_marker.png in Resources */,
+				CF6B73111BFEE0FF00B1410B /* 1448017246_find_in_magnifier_magnifying_research_search_view_zoom.png in Resources */,
 				CFB146841BD6DD710059C299 /* LaunchScreen.storyboard in Resources */,
+				CF2D79071BF29B2600DAF0A7 /* pin.png in Resources */,
 				CFB146811BD6DD710059C299 /* Assets.xcassets in Resources */,
+				CF6B73141BFEE0FF00B1410B /* 1448017276_award_awards_badge_best_big_game_bronze_ceremony_certificate_champion_choice_competitive_conqueror_cup_emblem_favorite.png in Resources */,
+				CF6B73121BFEE0FF00B1410B /* 1448017251_account_friend_human_man_member_person_profile_user_users.png in Resources */,
 				CFB1467F1BD6DD710059C299 /* Main.storyboard in Resources */,
+				CF6B73131BFEE0FF00B1410B /* 1448017264_cascade_display_layout_stack_sw_view.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,11 +220,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFF449B81BD9E7CC0022D5D8 /* AllChurchesTableViewController.swift in Sources */,
+				CF2D79141BF5405400DAF0A7 /* ChurchTopicsTableViewCell.swift in Sources */,
+				CF2D79121BF5403700DAF0A7 /* ChurchTimesTableViewCell.swift in Sources */,
+				CF83B9391BEC02250003FD31 /* AllChurchesTableViewCell.swift in Sources */,
+				CF2D790B1BF53F0A00DAF0A7 /* ChurchEventsTableViewCell.swift in Sources */,
 				CF0FA7E01BE018DF00250977 /* ChurchViewController.swift in Sources */,
 				CFF449B41BD9E2AF0022D5D8 /* AllChurchesViewController.swift in Sources */,
 				CFC411C21BD9D4CD006C5531 /* SearchViewController.swift in Sources */,
+				CF2D790D1BF53F2A00DAF0A7 /* ChurchPeopleTableViewCell.swift in Sources */,
+				CF2D79091BF53EF200DAF0A7 /* ChurchInfoTableViewCell.swift in Sources */,
 				CFF449B61BD9E6620022D5D8 /* Churches.swift in Sources */,
+				CF83B9371BEBFF080003FD31 /* DataSet.swift in Sources */,
 				CFB1467A1BD6DD710059C299 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
