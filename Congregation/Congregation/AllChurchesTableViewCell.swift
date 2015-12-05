@@ -14,6 +14,8 @@ class AllChurchesTableViewCell: UITableViewCell {
     
     @IBOutlet weak var churchTimes: UILabel!
     
+    @IBOutlet weak var favorite: UILabel!
+    
     @IBOutlet weak var distance: UILabel!
     
     @IBAction func pinPressed(sender: UIButton) {

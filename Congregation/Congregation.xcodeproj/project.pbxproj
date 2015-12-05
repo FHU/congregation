@@ -7,29 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CF0FA7E01BE018DF00250977 /* ChurchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FA7DF1BE018DF00250977 /* ChurchViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		CF2D79071BF29B2600DAF0A7 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = CF2D79061BF29B2600DAF0A7 /* pin.png */; settings = {ASSET_TAGS = (); }; };
-		CF2D79091BF53EF200DAF0A7 /* ChurchInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D79081BF53EF200DAF0A7 /* ChurchInfoTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		CF2D790B1BF53F0A00DAF0A7 /* ChurchEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D790A1BF53F0A00DAF0A7 /* ChurchEventsTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		CF2D790D1BF53F2A00DAF0A7 /* ChurchPeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D790C1BF53F2A00DAF0A7 /* ChurchPeopleTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		CF2D79121BF5403700DAF0A7 /* ChurchTimesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D79111BF5403700DAF0A7 /* ChurchTimesTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		CF2D79141BF5405400DAF0A7 /* ChurchTopicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D79131BF5405400DAF0A7 /* ChurchTopicsTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		CF0FA7E01BE018DF00250977 /* ChurchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FA7DF1BE018DF00250977 /* ChurchViewController.swift */; };
+		CF2D79071BF29B2600DAF0A7 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = CF2D79061BF29B2600DAF0A7 /* pin.png */; };
+		CF2D79091BF53EF200DAF0A7 /* ChurchInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D79081BF53EF200DAF0A7 /* ChurchInfoTableViewCell.swift */; };
+		CF2D790B1BF53F0A00DAF0A7 /* ChurchEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D790A1BF53F0A00DAF0A7 /* ChurchEventsTableViewCell.swift */; };
+		CF2D790D1BF53F2A00DAF0A7 /* ChurchPeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D790C1BF53F2A00DAF0A7 /* ChurchPeopleTableViewCell.swift */; };
+		CF2D79121BF5403700DAF0A7 /* ChurchTimesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D79111BF5403700DAF0A7 /* ChurchTimesTableViewCell.swift */; };
+		CF2D79141BF5405400DAF0A7 /* ChurchTopicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2D79131BF5405400DAF0A7 /* ChurchTopicsTableViewCell.swift */; };
 		CF37BFC81BFE80A000B70933 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF37BFC71BFE80A000B70933 /* MapKit.framework */; };
-		CF6B730F1BFEE0FF00B1410B /* 1448017221_gps_location_map_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6B73091BFEE0FF00B1410B /* 1448017221_gps_location_map_marker.png */; settings = {ASSET_TAGS = (); }; };
-		CF6B73101BFEE0FF00B1410B /* 1448017239_alarm_alert_clock_event_history_schedule_time_watch.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6B730A1BFEE0FF00B1410B /* 1448017239_alarm_alert_clock_event_history_schedule_time_watch.png */; settings = {ASSET_TAGS = (); }; };
-		CF6B73111BFEE0FF00B1410B /* 1448017246_find_in_magnifier_magnifying_research_search_view_zoom.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6B730B1BFEE0FF00B1410B /* 1448017246_find_in_magnifier_magnifying_research_search_view_zoom.png */; settings = {ASSET_TAGS = (); }; };
-		CF6B73121BFEE0FF00B1410B /* 1448017251_account_friend_human_man_member_person_profile_user_users.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6B730C1BFEE0FF00B1410B /* 1448017251_account_friend_human_man_member_person_profile_user_users.png */; settings = {ASSET_TAGS = (); }; };
-		CF6B73131BFEE0FF00B1410B /* 1448017264_cascade_display_layout_stack_sw_view.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6B730D1BFEE0FF00B1410B /* 1448017264_cascade_display_layout_stack_sw_view.png */; settings = {ASSET_TAGS = (); }; };
-		CF6B73141BFEE0FF00B1410B /* 1448017276_award_awards_badge_best_big_game_bronze_ceremony_certificate_champion_choice_competitive_conqueror_cup_emblem_favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6B730E1BFEE0FF00B1410B /* 1448017276_award_awards_badge_best_big_game_bronze_ceremony_certificate_champion_choice_competitive_conqueror_cup_emblem_favorite.png */; settings = {ASSET_TAGS = (); }; };
-		CF83B9371BEBFF080003FD31 /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF83B9361BEBFF080003FD31 /* DataSet.swift */; settings = {ASSET_TAGS = (); }; };
-		CF83B9391BEC02250003FD31 /* AllChurchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF83B9381BEC02250003FD31 /* AllChurchesTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		CF6B730F1BFEE0FF00B1410B /* 1448017221_gps_location_map_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6B73091BFEE0FF00B1410B /* 1448017221_gps_location_map_marker.png */; };
+		CF6B73101BFEE0FF00B1410B /* 1448017239_alarm_alert_clock_event_history_schedule_time_watch.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6B730A1BFEE0FF00B1410B /* 1448017239_alarm_alert_clock_event_history_schedule_time_watch.png */; };
+		CF6B73111BFEE0FF00B1410B /* 1448017246_find_in_magnifier_magnifying_research_search_view_zoom.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6B730B1BFEE0FF00B1410B /* 1448017246_find_in_magnifier_magnifying_research_search_view_zoom.png */; };
+		CF6B73121BFEE0FF00B1410B /* 1448017251_account_friend_human_man_member_person_profile_user_users.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6B730C1BFEE0FF00B1410B /* 1448017251_account_friend_human_man_member_person_profile_user_users.png */; };
+		CF6B73131BFEE0FF00B1410B /* 1448017264_cascade_display_layout_stack_sw_view.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6B730D1BFEE0FF00B1410B /* 1448017264_cascade_display_layout_stack_sw_view.png */; };
+		CF6B73141BFEE0FF00B1410B /* 1448017276_award_awards_badge_best_big_game_bronze_ceremony_certificate_champion_choice_competitive_conqueror_cup_emblem_favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6B730E1BFEE0FF00B1410B /* 1448017276_award_awards_badge_best_big_game_bronze_ceremony_certificate_champion_choice_competitive_conqueror_cup_emblem_favorite.png */; };
+		CF83B9371BEBFF080003FD31 /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF83B9361BEBFF080003FD31 /* DataSet.swift */; };
+		CF83B9391BEC02250003FD31 /* AllChurchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF83B9381BEC02250003FD31 /* AllChurchesTableViewCell.swift */; };
 		CFB1467A1BD6DD710059C299 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB146791BD6DD710059C299 /* AppDelegate.swift */; };
 		CFB1467F1BD6DD710059C299 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB1467D1BD6DD710059C299 /* Main.storyboard */; };
 		CFB146811BD6DD710059C299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB146801BD6DD710059C299 /* Assets.xcassets */; };
 		CFB146841BD6DD710059C299 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB146821BD6DD710059C299 /* LaunchScreen.storyboard */; };
-		CFC411C21BD9D4CD006C5531 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC411C11BD9D4CD006C5531 /* SearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		CFF449B41BD9E2AF0022D5D8 /* AllChurchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF449B31BD9E2AF0022D5D8 /* AllChurchesViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		CFF449B61BD9E6620022D5D8 /* Churches.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF449B51BD9E6620022D5D8 /* Churches.swift */; settings = {ASSET_TAGS = (); }; };
+		CFB763AD1C1029A000C992D3 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB763AC1C1029A000C992D3 /* SearchTableViewCell.swift */; };
+		CFB763AF1C10336600C992D3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB763AE1C10336600C992D3 /* CoreLocation.framework */; };
+		CFB763B11C10583F00C992D3 /* 1449161904_location.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB763B01C10583F00C992D3 /* 1449161904_location.png */; };
+		CFC411C21BD9D4CD006C5531 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC411C11BD9D4CD006C5531 /* SearchViewController.swift */; };
+		CFF449B41BD9E2AF0022D5D8 /* AllChurchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF449B31BD9E2AF0022D5D8 /* AllChurchesViewController.swift */; };
+		CFF449B61BD9E6620022D5D8 /* Churches.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF449B51BD9E6620022D5D8 /* Churches.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,9 @@
 		CFB146801BD6DD710059C299 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFB146831BD6DD710059C299 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFB146851BD6DD710059C299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFB763AC1C1029A000C992D3 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		CFB763AE1C10336600C992D3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CFB763B01C10583F00C992D3 /* 1449161904_location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1449161904_location.png; path = Assets.xcassets/1449161904_location.png; sourceTree = "<group>"; };
 		CFC411C11BD9D4CD006C5531 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CFF449B31BD9E2AF0022D5D8 /* AllChurchesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllChurchesViewController.swift; sourceTree = "<group>"; };
 		CFF449B51BD9E6620022D5D8 /* Churches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Churches.swift; sourceTree = "<group>"; };
@@ -65,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB763AF1C10336600C992D3 /* CoreLocation.framework in Frameworks */,
 				CF37BFC81BFE80A000B70933 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +82,7 @@
 		CF2D790E1BF53F9A00DAF0A7 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				CFB763AC1C1029A000C992D3 /* SearchTableViewCell.swift */,
 				CF83B9381BEC02250003FD31 /* AllChurchesTableViewCell.swift */,
 				CF2D790C1BF53F2A00DAF0A7 /* ChurchPeopleTableViewCell.swift */,
 				CF2D79081BF53EF200DAF0A7 /* ChurchInfoTableViewCell.swift */,
@@ -96,6 +104,7 @@
 				CF6B730B1BFEE0FF00B1410B /* 1448017246_find_in_magnifier_magnifying_research_search_view_zoom.png */,
 				CFF449B51BD9E6620022D5D8 /* Churches.swift */,
 				CF83B9361BEBFF080003FD31 /* DataSet.swift */,
+				CFB763B01C10583F00C992D3 /* 1449161904_location.png */,
 				CF2D79061BF29B2600DAF0A7 /* pin.png */,
 			);
 			name = Resources;
@@ -114,6 +123,7 @@
 		CFB1466D1BD6DD710059C299 = {
 			isa = PBXGroup;
 			children = (
+				CFB763AE1C10336600C992D3 /* CoreLocation.framework */,
 				CF37BFC71BFE80A000B70933 /* MapKit.framework */,
 				CFB146781BD6DD710059C299 /* Congregation */,
 				CFB146771BD6DD710059C299 /* Products */,
@@ -174,6 +184,7 @@
 				TargetAttributes = {
 					CFB146751BD6DD710059C299 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = W54TKUDTE4;
 					};
 				};
 			};
@@ -209,6 +220,7 @@
 				CF6B73141BFEE0FF00B1410B /* 1448017276_award_awards_badge_best_big_game_bronze_ceremony_certificate_champion_choice_competitive_conqueror_cup_emblem_favorite.png in Resources */,
 				CF6B73121BFEE0FF00B1410B /* 1448017251_account_friend_human_man_member_person_profile_user_users.png in Resources */,
 				CFB1467F1BD6DD710059C299 /* Main.storyboard in Resources */,
+				CFB763B11C10583F00C992D3 /* 1449161904_location.png in Resources */,
 				CF6B73131BFEE0FF00B1410B /* 1448017264_cascade_display_layout_stack_sw_view.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +240,7 @@
 				CFF449B41BD9E2AF0022D5D8 /* AllChurchesViewController.swift in Sources */,
 				CFC411C21BD9D4CD006C5531 /* SearchViewController.swift in Sources */,
 				CF2D790D1BF53F2A00DAF0A7 /* ChurchPeopleTableViewCell.swift in Sources */,
+				CFB763AD1C1029A000C992D3 /* SearchTableViewCell.swift in Sources */,
 				CF2D79091BF53EF200DAF0A7 /* ChurchInfoTableViewCell.swift in Sources */,
 				CFF449B61BD9E6620022D5D8 /* Churches.swift in Sources */,
 				CF83B9371BEBFF080003FD31 /* DataSet.swift in Sources */,
@@ -344,10 +357,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Congregation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fhu.edu.Congregation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -355,10 +371,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Congregation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fhu.edu.Congregation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

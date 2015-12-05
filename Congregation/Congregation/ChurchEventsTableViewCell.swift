@@ -10,6 +10,9 @@ import UIKit
 
 class ChurchEventsTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var eventsList: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

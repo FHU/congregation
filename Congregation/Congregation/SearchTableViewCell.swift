@@ -1,23 +1,38 @@
 //
-//  ChurchTopicsTableViewCell.swift
+//  SearchTableViewCell.swift
 //  Congregation
 //
-//  Created by Elijah Loyd Posey on 11/12/15.
+//  Created by Elijah Loyd Posey on 12/3/15.
 //  Copyright © 2015 Freed Hardiman University. All rights reserved.
 //
 
 import UIKit
 
-class ChurchTopicsTableViewCell: UITableViewCell {
+class SearchTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var Topics: UILabel!
+   
     
-    @IBOutlet weak var topicList: UILabel!
+    
+    
+    @IBOutlet weak var churchTitle: UILabel!
+    
+    @IBOutlet weak var churchTimes: UILabel!
+    
+    @IBOutlet weak var favorite: UILabel!
+    
+    @IBOutlet weak var distance: UILabel!
+    
+    @IBAction func pinPressed(sender: UIButton) {
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+
+    
+    
+    
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

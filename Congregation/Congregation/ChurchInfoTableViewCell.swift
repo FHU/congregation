@@ -15,7 +15,8 @@ class ChurchInfoTableViewCell: UITableViewCell {
     @IBOutlet weak var address: UILabel!
     @IBOutlet weak var phone: UILabel!
     @IBOutlet weak var web: UILabel!
-
+    @IBOutlet weak var favoriteButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

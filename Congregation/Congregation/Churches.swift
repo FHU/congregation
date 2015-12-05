@@ -37,14 +37,44 @@ class Person{
 }
 struct Event{
     
-    let title = String()
-    let description: String?
-    let date = NSDate()
-    let startTime = String()
-    let finishTime = String()
+    var title = String()
+    var description: String?
+    var date = String()
+    var startTime = String()
+    var finishTime: String?
     
+    init(title: String, date: String, startTime: String){
+        
+        self.title = title;
+        self.date = date;
+        self.startTime = startTime;
+    }
+    init(title: String, description: String, date: String, startTime: String, finishTime: String){
+        
+        self.title = title;
+        self.date = date;
+        self.startTime = startTime;
+        self.description = description
+        self.finishTime = finishTime
+    }
     
+
 }
+
+struct Topic{
+    
+    var title = String()
+    var speaker = String()
+    var service = String()
+    
+    init(title: String, speaker: String, service: String){
+       
+        self.title = title
+        self.speaker = speaker
+        self.service = service
+    }
+}
+
 
 public enum Denomination {
     case CoC
@@ -72,25 +102,38 @@ class Church{
     var description = String()
     var location:CLLocation?
     var streetAddress = String()
+    var city = String()
+    var zip = String()
+    var state = String()
     var denomination: Denomination?
     var people: [Person]?
     var meetingTimes: [meetingTime]?
     var events: [Event]?
+    var favorite: Bool?
+    var topics: [Topic]?
     
     
     
     
     
     
-    init(name: String, description: String, streetAddress: String, phone: String, website: String, people: [Person], meetingTimes: [meetingTime]){
+    init(name: String, description: String, streetAddress: String, city: String, state: String, zip: String, phone: String, website: String, people: [Person], meetingTimes: [meetingTime], events: [Event], topics: [Topic], favorite: Bool, location: CLLocation){
         
         self.name = name;
         self.description = description;
         self.streetAddress = streetAddress;
+        self.zip = zip
+        self.city = city
+        self.state = state
         self.meetingTimes = meetingTimes;
         self.phone = phone;
         self.website = website;
         self.people = people;
+        self.favorite = favorite
+        self.events = events
+        self.topics = topics
+        self.location = location
+        
     }
     
 }
